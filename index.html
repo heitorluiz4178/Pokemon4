@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Run - Evolução</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-wrapper">
+    <header class="topbar">
+      <div class="brand">
+        <span class="pokeball-mini"></span>
+        <div>
+          <h1>Pokémon Run</h1>
+          <p>Desafio Pokémon</p>
+        </div>
+      </div>
+
+      <div class="hud">
+        <div class="hud-box">
+          <span>❤️ Vidas</span>
+          <strong id="vidas">❤️❤️❤️</strong>
+        </div>
+        <div class="hud-box">
+          <span>⭐ Pontos</span>
+          <strong id="pontos">0</strong>
+        </div>
+        <div class="hud-box">
+          <span>🏆 Recorde</span>
+          <strong id="recorde">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="info-row">
+      <span id="cenarioNome">Cenário: Floresta</span>
+      <span id="inimigoNome">Inimigo: Zubat</span>
+      <span id="velocidadeNome">Velocidade: 1x</span>
+    </section>
+
+    <section id="game" class="game">
+      <div class="sky-decor cloud cloud-1"></div>
+      <div class="sky-decor cloud cloud-2"></div>
+      <div class="sky-decor cloud cloud-3"></div>
+
+      <div id="player" class="player">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="Pikachu">
+      </div>
+
+      <div id="enemy" class="enemy">
+        <img id="enemyImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/41.gif" alt="Inimigo">
+      </div>
+
+      <div id="pokeball" class="pokeball" title="Pegue a Pokébola!">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokébola">
+      </div>
+
+      <div class="ground"></div>
+      <div id="message" class="message">Pressione ESPAÇO ou ↑ para começar!</div>
+      <div id="startOverlay" class="start-overlay">
+        <div class="start-card">
+          <h2>⚡ Pokémon Run</h2>
+          <p>Corra, pule os inimigos e pegue as Pokébolas!</p>
+          <p><b>Espaço / ↑</b> = pular &nbsp; <b>← →</b> = movimentar</p>
+          <button id="startBtn">COMEÇAR JOGO</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <span>🎮 <b>Controles:</b> Espaço / ↑ Pular • ← → Mover</span>
+      <button id="restartBtn">🔄 Reiniciar</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
